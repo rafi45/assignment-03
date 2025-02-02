@@ -22,6 +22,7 @@
             font-weight: normal;
             font-style: normal;
         }
+
     </style>
     <script>
         tailwind.config = {
@@ -31,6 +32,11 @@
                         'secondary-bg': '#EFEBE3',
                         'accent': '#179800',
                         'accent-light': '#53DB3A',
+                        'accent-btn': '#63B76D',
+                        'accent-btn2': '#2A4D97',
+                        'banner-bg1': '#115414',                        
+                        'banner-bg2': '#102861',                        
+
                     }
                 }
             }
@@ -110,7 +116,7 @@
             </div>
         </section>
         <section class="bg-secondary-bg">
-            <div class="max-w-[1320px] mx-auto px-4 md:px-0">
+            <div class="max-w-[1320px] mx-auto px-4 md:px-4">
                 <h2 class="text-2xl pt-12 pb-8 md:text-[36px] font-semibold text-accent lg:pt-[140px] md:pb-[48px]">
                     Popular Products
                 </h2>
@@ -222,7 +228,30 @@
             <h2 class="text-2xl pt-12 pb-8 md:text-[36px] font-semibold text-accent lg:pt-[140px] md:pb-[48px]">
                 Arrival & Offers
             </h2>
-            
+            <div class="flex flex-col md:flex-row gap-4 md:mb-[162px]">
+                <div class="flex flex-1 lg:w-3/5 items-start bg-banner-bg1 pt-[26px] md:pt-[48px] pl-[18px] md:pl-10 rounded-xl md:rounded-[24px]">
+                    <div class="gap-[52px]">
+                        <img class="mb-[17px] md:mb-[31px] w-[112px] md:w-[auto]" src="./img/dawat-logo.png" alt="">
+                        <button class="text-[12px] md:text-xl mb-[14px] md:mb-[26px] text-white px-[18px] py-[9px] md:px-10 md:py-[15px] bg-accent-btn md:rounded-xl rounded-lg">Cook Exotic
+                            Dishes</button>
+                        <h2 class="text-[22px] md:text-[40px] font-bold text-white"><span class="font-normal">Up To</span> 20% OFF</h2>
+                    </div>
+                    <div>
+                        <img class="w-40 md:w-full relative md:top-0 -top-3 -right-10 md:-right-20" src="./img/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <div class="flex lg:w-2/5 items-end justify-between md:justify-normal bg-banner-bg2 rounded-xl md:rounded-[24px] pl-[19px] pt-[11px] md:pt-[26px] pb-[25px] md:pb-[38px] pr-8 md:pr-0">
+                    <div>
+                        <img class="mb-[17px] md:mb-[31px] w-[64px] md:w-[auto]" src="./img/india-gate-logo.png" alt="">
+                        <button class="text-[12px] md:text-xl mb-[14px] md:mb-[26px] text-white px-[18px] py-[9px] md:px-10 md:py-[15px] bg-accent-btn2 md:rounded-xl rounded-lg">World’s No.1
+                            Rice</button>
+                        <h2 class="text-[22px] md:text-[40px] font-bold text-white"><span class="font-normal">Up To</span> 40% OFF</h2>
+                    </div>
+                    <div>
+                        <img class="w-[100px] md:w-full relative md:top-8" src="./img/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
